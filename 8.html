@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+   * { margin: 0; }
+  body {
+    background: #6592CF;
+    height: 100vh;
+  }
+  /* голова вилки */
+  .fork {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 140px;
+    height: 190px;
+    background: #060F55;
+    transform: translate(-50%, -90px);
+    border-radius: 0 0 100px 100px;
+  }
+  /* три прореза между зубьями */
+  .fork:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    width: 20px;
+    height: 100px;
+    background: #6592CF;
+    border-radius: 0 0 100px 100px;
+    transform: translateX(-10px);
+    box-shadow:
+      -40px 0 0 #6592CF,
+      40px 0 0 #6592CF;
+  }
+  /* четыре скруглённых верха зубьев */
+  .fork:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: #060F55;
+    border-radius: 10px;
+    transform: translate(-70px, -20px);
+    box-shadow:
+      40px 0 0 #060F55,
+      80px 0 0 #060F55,
+      120px 0 0 #060F55;
+  }
+  /* ручка */
+  .handle {
+    position: absolute;
+    left: 50%;
+    bottom: -60px;
+    width: 20px;
+    height: 60px;
+    background: #060F55;
+    transform: translateX(-50%);
+  }
+  </style>
+</head>
+<body>
+    <div class="fork">
+    <div class="handle"></div>
+  </div>
+</body>
+</html>

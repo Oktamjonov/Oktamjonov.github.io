@@ -1,0 +1,158 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.navbar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	padding-top: 25px;
+}
+
+.navbar a{
+	text-decoration: none;
+	font-family: "Roboto", sans-serif;
+	letter-spacing: 2px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid transparent;
+}
+
+.navbar a:hover{
+	border-color: gray;
+}
+
+.header-box{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 100px;
+}
+
+.header-left{
+	width: 50%;
+}
+
+.header-left img{
+	width: 70%;
+	border-radius: 10px;
+}
+
+.header-right{
+	width: 50%;
+}
+
+ @media screen and (max-width:1000px){
+        .header-box{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+.header-right h1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.header-left{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	width: 90%;
+}
+
+.p-row{
+	flex-direction: column;
+}
+ }
+
+ .footer{
+	background-color: #222;
+	color: #fff;
+	padding: 40px 20px;
+	text-align: center;
+	font-family: sans-serif;
+	display: flex;
+	justify-content: space-between;
+ }
+
+ .footer-btn {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    flex: 1;
+    padding: 5px 0;
+}
+
+.footer-btn img {
+    width: 24px;
+    height: 24px;
+	border-radius: 50%;
+    display: block;
+    margin: 0 auto 4px auto;
+    filter: invert(100%); 
+}
+
+.footer-btn span {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+/* portfolio section */
+
+.p-row{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center ;
+	margin-top: 50px;
+	gap: 10px;
+	margin-bottom: 200px;
+}
+
+.p-col{
+	width:400px;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+	outline: 1px solid gray;
+}
+
+.p-col img{
+	width: 100%;
+	
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #e68900;
+}

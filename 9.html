@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  * { margin: 0; }
+  body {
+    background: #222730;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* большой тёмно-синий квадрат */
+  .outer {
+    width: 250px;
+    height: 250px;
+    background: #4CAAB3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+  }
+  /* белый квадрат внутри */
+  .middle {
+    width: 150px;
+    height: 150px;
+    background: #222730;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+  }
+  /* синий квадрат в центре */
+  .inner {
+    width: 75px;
+    height: 75px;
+    background: #4CAAB3;
+    transform: rotate(45deg);
+  }
+</style>
+</head>
+<body>
+     <div class="outer">
+    <div class="middle">
+      <div class="inner"></div>
+    </div>
+  </div>
+</body>
+</html>
